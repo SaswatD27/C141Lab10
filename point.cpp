@@ -90,12 +90,24 @@ class Rectangle
 {
 	private:
 	Point a,b,c,d;//where a is the top left point and we move clockwise from a through d
+	int size1()
+	{
+		return b.Get_X()-a.Get_X();
+	}
+	int size2()
+	{
+		return b.Get_Y()-c.Get_Y();
+	}
 // ********************************************************************
 //  Methods for class Rectangle
 // ********************************************************************
 
 //Lab 7 exercise 4.2, 4.3. Add class Rectangle methods HERE: 
 	public:
+	int area()
+	{
+		return size1()*size2();
+	}
 	Rectangle(Point p, Point q)
 	{
 		d.Set_X(p.Get_X());
@@ -165,6 +177,8 @@ int main()
 	r1.print();
 	cout<<endl<<"For Rectangle r2 - ";
 	r2.print();
+	cout<<"Area of the rectangle r1 is "<<r1.area();
+	cout<<"Area of the rectangle r2 is "<<r2.area();
 	//Au revoir
 	return 0;
 }
