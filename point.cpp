@@ -177,8 +177,8 @@ int main()
 	r1.print();
 	cout<<endl<<"For Rectangle r2 - ";
 	r2.print();
-	cout<<"Area of the rectangle r1 is "<<r1.area();
-	cout<<"Area of the rectangle r2 is "<<r2.area();
+	cout<<endl<<"Area of the rectangle r1 is "<<r1.area();
+	cout<<endl<<"Area of the rectangle r2 is "<<r2.area();
 	//Au revoir
 	return 0;
 }
